@@ -1,7 +1,10 @@
 const Home = () => {
   return (
-    <div>
-      <h1>Acceuil</h1>
+    <div className="home">
+      <div className="banner">
+        <img src="../src/assets/img/ImgHome.png" alt="Img Home" />
+        <h1>Chez vous, et partout ailleurs </h1>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,9 @@
-//import ImgAbout from "../assets/img/ImgAbout.png";
-//<img src={ImgAbout} alt="Img About" />;
 const About = () => {
   return (
-    <div>
-      <h1>A Propos</h1>
+    <div className="home">
+      <div className="banner">
+        <img src="../src/assets/img/ImgAbout.png" alt="Img About" />
+      </div>
     </div>
   );
 };
