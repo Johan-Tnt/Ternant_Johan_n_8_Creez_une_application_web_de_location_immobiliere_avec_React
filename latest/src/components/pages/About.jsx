@@ -1,3 +1,6 @@
+//Début code Johan
+//Contient le menu "à propos"
+
 const About = () => {
   return (
     <div className="home">
@@ -9,3 +12,5 @@ const About = () => {
 };
 
 export default About;
+
+//Fin code Johan

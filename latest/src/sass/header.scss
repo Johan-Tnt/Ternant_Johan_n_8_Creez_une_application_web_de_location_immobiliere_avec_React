@@ -1,7 +1,13 @@
+//Début code Johan
+//Contient la mise en page globale du "header"
 .header {
   display: flex;
   justify-content: space-between;
   color: black;
+  margin-left: 80px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  //Mise en page de la navigation
   nav {
     ul {
       display: flex;
@@ -13,9 +19,12 @@
         }
       }
       li {
-        margin: 0 10px;
+        margin: 0 20px;
         list-style: none;
+        font-size: 24px;
+        margin-right: 65px;
       }
     }
   }
 }
+//Fin code Johan

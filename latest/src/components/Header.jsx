@@ -1,3 +1,6 @@
+//Début code Johan
+//Contient le "header" (react router)
+
 import LogoKasa from "../assets/img/LogoKasa.png";
 import { NavLink } from "react-router-dom";
 
@@ -11,7 +14,7 @@ const Header = () => {
             to="/"
             className={({ isActive }) => (isActive ? "underline" : "")}
           >
-            <li>Acceuil</li>
+            <li>Accueil</li>
           </NavLink>
           <NavLink
             to="/about"
@@ -26,3 +29,5 @@ const Header = () => {
 };
 
 export default Header;
+
+//Fin code Johan

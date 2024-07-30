@@ -1,22 +1,50 @@
+//Début code Johan
+//Contient la mise en page global du menu "home"
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+//Mise en page de toutes les div
 .home {
+  display: flex;
+  flex-direction: column;
+  .gallery {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 43px;
+  }
+  //Mise en page des bannières "img banner et background gris"
+  .grey_banner {
+    background: #f6f6f6;
+    border-radius: 30px;
+    margin: 50px;
+  }
   .banner {
-    width: 100%;
+    width: 92%;
     height: 223px;
     margin-top: 20px;
     position: relative;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 25px;
     }
+    //Mise en page du titre de la bannière
     h1 {
       position: absolute;
-      top: 50%;
+      top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-size: 2rem;
+      font-size: 48px;
     }
   }
 }
+//Fin code Johan
