@@ -2,15 +2,21 @@
 //Contient les "img des logements"
 
 import PropsTypes from "prop-types";
+import { Link } from "react-router-dom";
+//import Logement from "../Logement";
 
 const Thumb = ({ logements }) => {
   return logements.map((logements) => (
-    <div className="thumb" key={logements.id}>
+    <Link
+      to={`/logements/${logements.id}`}
+      className="thumb"
+      key={logements.id}
+    >
       <img src={logements.cover} alt={logements.title} />
       <div className="thumb_title">
         <h3>{logements.title}</h3>
       </div>
-    </div>
+    </Link>
   ));
 };
 
