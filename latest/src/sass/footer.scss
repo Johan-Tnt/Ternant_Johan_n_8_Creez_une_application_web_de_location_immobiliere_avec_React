@@ -1,0 +1,15 @@
+//Début code Johan
+//Contient la mise en page globale du "footer"
+.footer {
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  gap: 29px;
+  padding-top: 66px;
+  padding-bottom: 29px;
+  //text-align: center;
+  .footer_logo {
+    margin: auto;
+  }
+}
+//Fin code Johan

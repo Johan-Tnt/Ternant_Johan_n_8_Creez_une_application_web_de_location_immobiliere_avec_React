@@ -20,6 +20,7 @@ const Logement = () => {
   const pictures = logements.pictures;
   return (
     <div className="layout_logement">
+      {/*<div className="layout_housing">*/}
       <div className="pictures">
         {pictures.map((picture, index) => {
           return (
@@ -97,6 +98,7 @@ const Logement = () => {
           {logements.equipments}
         </p>
       </div>
+      {/*</div>*/}
     </div>
   );
 };

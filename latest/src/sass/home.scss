@@ -1,14 +1,18 @@
 //Début code Johan
 //Contient la mise en page global du menu "home"
 body {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1440px;
+  //margin-left: auto;
+  //margin-right: auto;
+  //max-width: 1440px;
+  margin: auto;
 }
 //Mise en page de toutes les div
 .home {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
   .gallery {
     margin: 50px;
     display: grid;

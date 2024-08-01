@@ -7,7 +7,7 @@
   flex-direction: column;
   //Mise en page des img d'un "logement"
   img {
-    max-width: 1240px;
+    //max-width: 1240px;
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
@@ -16,11 +16,17 @@
     color: #ff6060;
   }
 }
+//.layout_housing {
+//max-width: 1440px;
+// margin-left: auto;
+// margin-right: auto;
+//}
 
 //Mise en page globale d'un logement
 .layout_logement {
   margin-left: 100px;
-  margin-right: 60px;
+  margin-right: 100px;
+  margin-bottom: 200px;
 }
 
 //Mise en page du titre d'un "logement"
