@@ -1,10 +1,12 @@
 //Début code Johan
 //Contient le menu "à propos"
-// get our fontawesome imports
+
+//Contient les "icon" fontawesome imports
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
+// Contient les imports pour les logements
 import { useParams } from "react-router-dom";
 import logements from "../data/logements.json";
 
@@ -77,7 +79,9 @@ const Logement = () => {
             size="xl"
           />
         </h2>
-        <p className="housing_sheet layout_btn">{logements.description}</p>
+        <p className="housing_sheet layout_btn housing_banner">
+          {logements.description}
+        </p>
       </div>
 
       <div className="housing_sheet_btn layout_equipments">
@@ -89,7 +93,9 @@ const Logement = () => {
             size="xl"
           />
         </h2>
-        <p className="housing_sheet layout_btn">{logements.equipments}</p>
+        <p className="housing_sheet layout_btn housing_banner">
+          {logements.equipments}
+        </p>
       </div>
     </div>
   );
