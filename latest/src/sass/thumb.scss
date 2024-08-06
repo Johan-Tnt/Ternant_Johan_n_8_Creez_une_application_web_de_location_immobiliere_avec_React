@@ -3,7 +3,7 @@
 .thumb {
   max-width: 360px;
   height: 346px;
-  border: solid 2px #ff6060;
+  border: solid 2px transparent;
   cursor: pointer;
   position: relative;
   border-radius: 15px;
@@ -11,11 +11,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    filter: brightness(55%); //Pour assombrir une img
   }
   //Mise en page du titre de chaque "img des logements"
   h3 {
@@ -29,13 +31,12 @@
     bottom: 0;
     color: white;
     font-size: 18px;
-    background-color: #ff6060;
     margin: 0;
     height: 20%;
     width: 100%;
     border-radius: 0 0 12px 12px;
     &:hover {
-      background-color: #ff6060;
+      background-color: black;
     }
   }
 }

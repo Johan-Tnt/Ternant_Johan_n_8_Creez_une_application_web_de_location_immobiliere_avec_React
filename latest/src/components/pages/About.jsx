@@ -2,9 +2,7 @@
 //Début code Johan
 //Contient le menu "à propos"
 
-//Contient les "icon" fontawesome imports
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Accordion from "../Accordion";
 
 const About = () => {
   return (
@@ -13,72 +11,44 @@ const About = () => {
         <img src="../src/assets/img/ImgAbout.png" alt="Img About" />
       </div>
 
-      <div className="about_sheet">
-        <div className="about_btn">
-          <h2 className="about_title">
-            Fiabilité
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              style={{ color: "white" }}
-              size="xl"
-            />
-          </h2>
-          <p className="about_content about_grey_banner">
-            Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-            photos sont conformes aux logements, et toues les informations sont
-            régulièrement vérifiéesd par nos équipes.
-          </p>
+      <div className="about_sheet_2">
+        <div className="about_btn_2">
+          <Accordion
+            title="Fiabilité"
+            content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+            photos sont conformes aux logements, et toutes les informations sont
+            régulièrement vérifiées par nos équipes."
+          />
         </div>
 
-        <div className="about_btn ">
-          <h2 className="about_title">
-            Respect
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              style={{ color: "white" }}
-              size="xl"
-            />
-          </h2>
-          <p className="housing_content about_grey_banner">
-            La bienviellance fait partie des valeurs fondatrices de Kasa. Tout
+        <div className="about_btn_2">
+          <Accordion
+            title="Respect"
+            content="Contenu La bienviellance fait partie des valeurs fondatrices de Kasa. Tout
             comportement discriminatoire ou de perturbation du voisinage
-            entraînera une exclusion de nbotre plateforme.
-          </p>
+            entraînera une exclusion de notre plateforme."
+          />
         </div>
 
-        <div className="about_btn ">
-          <h2 className="about_title">
-            Service
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              style={{ color: "white" }}
-              size="xl"
-            />
-          </h2>
-          <p className="housing_content about_grey_banner">
-            La bienviellance fait partie des valeurs fondatrices de Kasa. Tout
+        <div className="about_btn_2">
+          <Accordion
+            title="Service"
+            content=" La bienviellance fait partie des valeurs fondatrices de Kasa. Tout
             comportement discriminatoire ou de perturbation du voisinage
-            entraînera une exclusion de nbotre plateforme.
-          </p>
+            entraînera une exclusion de notre plateforme."
+          />
         </div>
 
-        <div className="about_btn ">
-          <h2 className="about_title">
-            Sécurité
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              style={{ color: "white" }}
-              size="xl"
-            />
-          </h2>
-          <p className="housing_content about_grey_banner">
-            La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
+        <div className="about_btn_2">
+          <Accordion
+            title="Sécurité"
+            content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
             pour les voyageurs, chaque logements correspond aux critères de
             sécurité établis par nos services. En laissant une note aussi bien à
             l'hôte qu'au locataire, cela permet à nos équipes de vérifier que
             les standards sont bien respectés. Nous organisons également des
-            ateliers sur la sécurité domestique pour nos hôtes.
-          </p>
+            ateliers sur la sécurité domestique pour nos hôtes."
+          />
         </div>
       </div>
     </div>

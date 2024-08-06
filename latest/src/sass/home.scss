@@ -39,6 +39,7 @@ body {
       height: 100%;
       object-fit: cover;
       border-radius: 25px;
+      filter: brightness(60%); //Pour assombrir une img
     }
     //Mise en page du titre de la bannière
     h1 {

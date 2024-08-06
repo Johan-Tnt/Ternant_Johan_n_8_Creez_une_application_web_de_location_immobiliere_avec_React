@@ -16,6 +16,7 @@
     color: #ff6060;
   }
 }
+
 //.layout_housing {
 //max-width: 1440px;
 // margin-left: auto;
@@ -26,7 +27,26 @@
 .layout_logement {
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+}
+
+//Boutons "logement"
+.about_btn {
+  background-color: #ff6060;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  max-width: 582px;
+  text-wrap: balance;
+}
+.about_sheet {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 //Mise en page du titre d'un "logement"
@@ -34,33 +54,15 @@
   color: #ff6060;
   font-size: 36px;
 }
+//Mise en page d'une' "location"
 .housing_sheet {
   color: black;
   font-size: 18px;
   gap: 10px;
   display: flex;
 }
-.housing_sheet_title {
-  color: white;
-  font-size: 18px;
-}
-.housing_banner {
-  background-color: #f6f6f6;
-  border-radius: 5px;
-}
 
-//Boutons d'un logement
-.layout_btn {
-  margin-top: 40px;
-}
-.housing_sheet_btn {
-  background-color: #ff6060;
-  border-radius: 5px;
-  max-width: 582px;
-  height: 52px;
-  text-wrap: balance;
-  margin-top: 30px;
-}
+//Tags d'un "logement"
 .tags_btn {
   color: white;
   font-size: 14px;
@@ -72,16 +74,6 @@
   margin-top: 30px;
   justify-content: center;
 }
-
-//Note d'un logement
-//.rate_housing {
-// position: absolute;
-//margin-left: 880px;
-//top: 2880px;
-//}
-
-//Flèches de Description et Equipements
-// arrow_direction{ margin-left 450px}
 
 //Nom du propriétaire
 .owner_name {
@@ -101,15 +93,16 @@
   justify-content: center;
 }
 
-//simulation des btn d'un logement
-.layout_equipments {
-  position: relative;
-  bottom: 80px;
-  top: 100px;
-  //margin-left: 650px;
-}
-//.layout_description {
-// margin-left: 0;
+//Note d'un logement
+//.rate_housing {
+// position: absolute;
+//margin-left: 880px;
+//top: 2880px;
+//}
+
+//Flèches de Description et Equipements
+// arrow_direction{
+// margin-left 450px
 //}
 
 //Fin code Johan

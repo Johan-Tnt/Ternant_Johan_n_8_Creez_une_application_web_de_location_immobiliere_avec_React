@@ -4,11 +4,11 @@
 //Contient les "icon" fontawesome imports
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 // Contient les imports pour les logements
 import { useParams } from "react-router-dom";
 import logements from "../data/logements.json";
+import Accordion from "../components/Accordion";
 
 const findLogementsID = (id) => {
   return logements.find((logements) => logements.id === id);
@@ -20,7 +20,6 @@ const Logement = () => {
   const pictures = logements.pictures;
   return (
     <div className="layout_logement">
-      {/*<div className="layout_housing">*/}
       <div className="pictures">
         {pictures.map((picture, index) => {
           return (
@@ -71,34 +70,15 @@ const Logement = () => {
         {logements.rating} étoiles
       </div>
 
-      <div className="housing_sheet_btn">
-        <h2 className="housing_sheet_title">
-          Description
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            style={{ color: "white" }}
-            size="xl"
-          />
-        </h2>
-        <p className="housing_sheet layout_btn housing_banner">
-          {logements.description}
-        </p>
-      </div>
+      <div className="about_sheet">
+        <div className="about_btn">
+          <Accordion title="Description" content={logements.description} />
+        </div>
 
-      <div className="housing_sheet_btn layout_equipments">
-        <h2 className="housing_sheet_title">
-          Équipements
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            style={{ color: "white" }}
-            size="xl"
-          />
-        </h2>
-        <p className="housing_sheet layout_btn housing_banner">
-          {logements.equipments}
-        </p>
+        <div className="about_btn">
+          <Accordion title="Équipements" content={logements.equipments} />
+        </div>
       </div>
-      {/*</div>*/}
     </div>
   );
 };

@@ -1,0 +1,86 @@
+//Début code Johan
+//Contient les accordéons (collapse) d'un "logement" et de "à propos"
+
+//Contient le fonctionnement des accordéons
+//Contient les icon
+.accordion__icon {
+  position: relative;
+}
+
+//Contient le titre des acordéons
+.accordion__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  padding: 0 1rem;
+  font-size: 26px;
+  height: 52px;
+  font-weight: bold;
+}
+
+.active .accordion__title {
+  cursor: pointer;
+  background: #ff6060;
+  color: white;
+  border-radius: 5px;
+}
+
+.accordion__icon::before {
+  position: absolute;
+  content: "";
+  transform: rotate(90deg);
+  transition: all 0.2s;
+  //transform: rotate(90deg);
+}
+
+.active .accordion__icon::before {
+  transform: rotate(0deg);
+  opacity: 0;
+  /*transition-duration: 0.8s;
+  transition-property: transform;
+  transform: rotate(0deg);*/
+}
+
+//Contient le contenu des acordéons
+.accordion__content {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: all 0.1s ease-in;
+  font-size: 20px;
+  background-color: #f6f6f6;
+  color: black;
+}
+
+.active .accordion__content {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+//Boutons "A propos"
+.about_btn_2 {
+  background-color: #ff6060;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  max-width: 1023px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about_sheet_2 {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+//Fin code Johan
