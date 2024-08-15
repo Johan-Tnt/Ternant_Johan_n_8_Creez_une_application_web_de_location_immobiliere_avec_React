@@ -6,6 +6,8 @@
   gap: 20px;
   flex-direction: column;
   //Mise en page des img d'un "logement"
+  top: 30px;
+  position: relative;
   img {
     //max-width: 1240px;
     height: 415px;
@@ -25,34 +27,58 @@
 
 //Mise en page globale d'un logement
 .layout_logement {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+.container_logement {
+  //display: flex;
+  //flex-direction: column;
+  width: 70%;
+  font-weight: bold;
+}
+
+.container_logement_2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container_information_logement {
+  top: 30px;
+  position: relative;
 }
 
 //Boutons "logement"
-.about_btn {
+.logement_btn {
   background-color: #ff6060;
   border-radius: 5px;
-  margin-top: 30px;
   border: none;
   cursor: pointer;
   text-align: left;
   font-size: 18px;
   color: white;
-  max-width: 582px;
+  //max-width: 582px;
   text-wrap: balance;
+  max-width: 100%;
+  width: 80%;
+  //border-radius: 10px;
 }
-.about_sheet {
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+.logement_sheet {
+  gap: 76px;
+  max-width: 1440px;
+  position: relative;
+  display: flex;
+  bottom: 70px;
 }
 
 //Mise en page du titre d'un "logement"
 .title_housing {
   color: #ff6060;
   font-size: 36px;
+  position: relative;
+  top: 45px;
+  margin: 0;
 }
 //Mise en page d'une' "location"
 .housing_sheet {
@@ -61,48 +87,67 @@
   gap: 10px;
   display: flex;
 }
+.housing_location {
+  position: relative;
+  top: 35px;
+  font-size: 18px;
+}
 
 //Tags d'un "logement"
 .tags_btn {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #ff6060;
   border-radius: 12px;
-  max-width: 115px;
-  height: 25px;
-  text-wrap: balance;
-  margin-top: 30px;
-  justify-content: center;
+  height: 40px;
+  position: relative;
+  //width: 115px;//Taille de base des btn Tags
+  width: 300px;
+  border: none;
+  right: 40px;
+  top: 40px;
+  text-align: center;
 }
 
 //Nom du propriétaire
 .owner_name {
   color: #ff6060;
-  font-size: 18px;
-  //margin-left: 650px;
-  //position: relative;
-  //bottom: 80px;
-}
-.owner_picture {
-  background-color: #c4c4c4;
-  border-radius: 40px;
-  max-width: 64px;
-  height: 64px;
+  font-size: 20px;
+  position: relative;
+  bottom: 190px;
+  text-align: right;
   text-wrap: balance;
-  margin-top: 30px;
-  justify-content: center;
+  right: 100px;
+  margin: 0;
+}
+
+.owner_accommodation {
+  text-align: right;
+  position: relative;
+  bottom: 130px;
+  margin: 0;
+}
+
+.img_owner {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  //height: 64px;
 }
 
 //Note d'un logement
-//.rate_housing {
-// position: absolute;
-//margin-left: 880px;
-//top: 2880px;
-//}
+.rate_housing {
+  position: relative;
+  justify-content: right;
+  bottom: 130px;
+}
 
-//Flèches de Description et Equipements
-// arrow_direction{
-// margin-left 450px
-//}
+//Contient les média querries
+
+@media (max-width: 1440px) {
+  .layout_logement {
+    width: 90%;
+  }
+}
 
 //Fin code Johan

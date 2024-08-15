@@ -6,8 +6,12 @@
 @use "./sass/home";
 @use "./sass/thumb";
 @use "./sass/logement";
-//@use "./sass/about";
 @use "./sass/footer";
 @use "./sass/accordion";
+@use "./sass/carrousel";
+
+* {
+  font-family: Montserrat, sans-serif;
+}
 
 //Fin code Johan

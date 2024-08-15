@@ -1,9 +1,8 @@
 //Début code Johan
-//Contient les "img des logements"
 
+//Contient les "img des logements"
 import PropsTypes from "prop-types";
 import { Link } from "react-router-dom";
-//import Logement from "../Logement";
 
 const Thumb = ({ logements }) => {
   return logements.map((logements) => (

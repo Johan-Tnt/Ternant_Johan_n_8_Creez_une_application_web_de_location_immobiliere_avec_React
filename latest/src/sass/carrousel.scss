@@ -1,0 +1,62 @@
+//Début code Johan
+//Contient le carousel
+
+//Contient les icon carroussel
+.icon_arrow_carrousel {
+  height: 120px;
+  width: 96px;
+}
+.icon_arrow_left {
+  position: absolute;
+  margin-top: 150px;
+}
+.icon_arrow_right {
+  position: absolute;
+  margin-top: 150px;
+  right: 0;
+}
+
+//Contient la mise en page du slider
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide_show {
+  position: relative;
+  //height: 500px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.4s ease-in-out;
+  border-radius: 25px;
+  height: 415px;
+}
+
+//Contient la mise en page du chiffrage des img Carrousel
+.show {
+  display: flex;
+  gap: 20px;
+}
+.number_img {
+  position: absolute;
+  color: white;
+  font-size: 26px;
+  top: 320px;
+}
+
+.show img {
+  flex: 1;
+  width: 20%;
+  box-shadow: 0 2px 8px black;
+  cursor: pointer;
+}
+
+//Contient les média querries
+
+@media screen and (max-width: 550px) {
+  .slide_show {
+    height: 200px;
+  }
+}
+
+//Fin code Johan
