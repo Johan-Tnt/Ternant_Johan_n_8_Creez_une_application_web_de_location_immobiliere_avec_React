@@ -43,7 +43,7 @@ export default function Slider({ pictures }) {
         />
       </div>
 
-      <div>
+      <div className="number_sheet">
         <p className="number_img show">
           {index + 1}/{pictures.length}
         </p>

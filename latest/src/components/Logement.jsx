@@ -56,6 +56,7 @@ const Logement = () => {
             />
           </p>
           <p className="owner_name">{logements.host.name}</p>
+
           <div className="housing_sheet rate_housing">
             {/*{pictures.map((picture, index) => {
             return (
