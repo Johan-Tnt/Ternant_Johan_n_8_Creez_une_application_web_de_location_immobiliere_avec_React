@@ -19,8 +19,16 @@ const Logement = () => {
   const { id } = useParams();
   const logements = findLogementsID(id);
   const picture = logements.host.picture;
-  //const tags = logements.tags.map;
-  const tags = logements.tags;
+  const listTags = logements.tags.map((tag) => (
+    <li className="housing_sheet tags_btn" key={tag}>
+      {tag}
+    </li>
+  ));
+  const listEquipments = logements.equipments.map((equipment) => (
+    <p className="content_equipments" key={equipment}>
+      {equipment}
+    </p>
+  ));
   //const star = logements.rating;
 
   return (
@@ -35,12 +43,7 @@ const Logement = () => {
         <div className="container_logement">
           <p className="title_housing">{logements.title}</p>
           <p className="housing_sheet housing_location">{logements.location}</p>
-          <ul>
-            <li className="housing_sheet tags_btn">
-              {tags}
-              {/*{tags.map}*/}
-            </li>
-          </ul>
+          <ul className="tags_housing">{listTags}</ul>
         </div>
 
         <div className="container_logement_2">
@@ -102,7 +105,7 @@ const Logement = () => {
           </div>
 
           <div className="logement_btn">
-            <Accordion title="Équipements" content={logements.equipments} />
+            <Accordion title="Équipements" content={listEquipments} />
           </div>
         </div>
       </section>

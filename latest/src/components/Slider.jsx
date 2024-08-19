@@ -13,17 +13,11 @@ export default function Slider({ pictures }) {
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
-    setIndex(index + 1);
-    if (index === pictures.length - 1) {
-      setIndex(0);
-    }
+    setIndex(index === pictures.length - 1 ? 0 : index + 1);
   };
 
   const previousSlide = () => {
-    setIndex(index - 1);
-    if (index === 0) {
-      setIndex(pictures.length - 1);
-    }
+    setIndex(index === 0 ? pictures.length - 1 : index - 1);
   };
 
   return (
@@ -39,6 +33,7 @@ export default function Slider({ pictures }) {
           alt="flèche gauche"
           onClick={previousSlide}
         />
+
         <FontAwesomeIcon
           icon={faChevronRight}
           style={{ color: "white" }}
@@ -48,8 +43,10 @@ export default function Slider({ pictures }) {
         />
       </div>
 
-      <div className="show">
-        <p className="number_img">1/?</p>
+      <div>
+        <p className="number_img show">
+          {index + 1}/{pictures.length}
+        </p>
       </div>
     </div>
   );

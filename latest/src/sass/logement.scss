@@ -63,6 +63,7 @@
   max-width: 100%;
   width: 80%;
   //border-radius: 10px;
+  //height: 50px; //Code test pour btn red d'un logement
 }
 .logement_sheet {
   gap: 76px;
@@ -70,6 +71,7 @@
   position: relative;
   display: flex;
   bottom: 70px;
+  // height: 150px; //Code test pour btn red d'un logement
 }
 
 //Mise en page du titre d'un "logement"
@@ -93,20 +95,37 @@
   font-size: 18px;
 }
 
+//Contient la mise en page des éléments d'équipements
+.content_equipments {
+  margin: auto;
+}
+
 //Tags d'un "logement"
+.tags_housing {
+  display: flex;
+  //flex-direction: row;
+  gap: 10px;
+  //text-align: center;
+}
 .tags_btn {
   color: white;
-  font-size: 16px;
+  //font-size: 16px;
   background-color: #ff6060;
   border-radius: 12px;
-  height: 40px;
+  //height: 40px;
   position: relative;
-  //width: 115px;//Taille de base des btn Tags
-  width: 300px;
+  //width: 115px; //Taille de base des btn Tags
+  //width: 150px;
   border: none;
   right: 40px;
   top: 40px;
   text-align: center;
+  display: inline-block;
+  padding: 0 1rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  border-radius: 10px;
 }
 
 //Nom du propriétaire
