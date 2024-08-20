@@ -1,15 +1,12 @@
 //Début code Johan
 //Contient le menu "à propos"
 
-//Contient les "icon" fontawesome imports
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // Contient les imports pour les logements
 import { useParams } from "react-router-dom";
 import logements from "../data/logements.json";
 import Accordion from "../components/Accordion";
 import Slider from "./Slider";
+import StarRating from "./StarRating";
 
 const findLogementsID = (id) => {
   return logements.find((logements) => logements.id === id);
@@ -29,7 +26,6 @@ const Logement = () => {
       {equipment}
     </p>
   ));
-  //const star = logements.rating;
 
   return (
     <div className="layout_logement">
@@ -57,44 +53,8 @@ const Logement = () => {
           </p>
           <p className="owner_name">{logements.host.name}</p>
 
-          <div className="housing_sheet rate_housing">
-            {/*{pictures.map((picture, index) => {
-            return (
-              <FontAwesomeIcon
-                icon={faStar}
-                style={{ color: "#ff6060" }}
-                size="2xl"
-                alt={picture.title}
-                key={(picture, index)}
-              />
-            );
-          })}*/}
-            <FontAwesomeIcon
-              icon={faStar}
-              style={{ color: "#ff6060" }}
-              size="xl"
-            />
-            <FontAwesomeIcon
-              icon={faStar}
-              style={{ color: "#ff6060" }}
-              size="xl"
-            />
-            <FontAwesomeIcon
-              icon={faStar}
-              style={{ color: "#ff6060" }}
-              size="xl"
-            />
-            <FontAwesomeIcon
-              icon={faStar}
-              style={{ color: "#ff6060" }}
-              size="xl"
-            />
-            <FontAwesomeIcon
-              icon={faStar}
-              style={{ color: "#ff6060" }}
-              size="xl"
-            />
-            <span> {logements.rating} sur 5</span>
+          <div className="rate_housing">
+            <StarRating rating={parseInt(logements.rating)} />
           </div>
         </div>
       </section>
