@@ -1,0 +1,27 @@
+//Début code Johan
+//Contient la mise en page global da la page "erreur 404"
+.message_error {
+  color: #ff6060;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.error_title {
+  font-size: 288px;
+  margin: 0;
+}
+
+.error_text {
+  font-size: 36px;
+}
+
+.error_redirection {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-top: 50px;
+}
+
+//Fin code Johan

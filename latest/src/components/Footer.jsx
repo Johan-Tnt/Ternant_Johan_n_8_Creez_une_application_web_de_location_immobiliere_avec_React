@@ -7,7 +7,13 @@ import LogoKasa2020 from "../assets/img/Kasa 2020.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <img src={LogoKasaWhite} alt="Logo Kasa White" className="footer_logo" />
+      <a href="/" className="footer_link">
+        <img
+          src={LogoKasaWhite}
+          alt="Logo Kasa White"
+          className="footer_logo"
+        />
+      </a>
       <img src={LogoKasa2020} alt="2020 Kasa. All rifghts reserved" />
     </div>
   );
