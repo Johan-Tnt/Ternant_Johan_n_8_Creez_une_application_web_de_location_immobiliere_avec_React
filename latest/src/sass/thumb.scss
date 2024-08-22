@@ -7,13 +7,10 @@
   cursor: pointer;
   position: relative;
   border-radius: 15px;
-  //top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 50px;
-  //margin-top: 50px;
-  top: 20px;
-  //filter: brightness(60%); //Pour assombrir une img
+  bottom: 50px;
+  top: 50px;
   img {
     width: 100%;
     height: 100%;
@@ -23,11 +20,10 @@
   //Mise en page du titre de chaque "img des logements"
   h3 {
     position: relative;
-    //bottom: 10px;
     left: 10px;
-    text-wrap: balance;
-    top: 270px;
+    top: 250px;
     font-weight: normal;
+    text-wrap: balance;
   }
   .thumb_title {
     position: absolute;
@@ -37,26 +33,23 @@
     margin: 0;
     height: 20%;
     width: 100%;
-    //border-radius: 0 0 12px 12px;
     background: linear-gradient(180deg, #0000, #000c); //Pour assombrir une img
     border-radius: 15px;
-    //bottom: 370px;
     height: 100%;
     position: absolute;
     width: 100%;
     &:hover {
-      //background-color: black;
       background: linear-gradient(
         180deg,
         rgba(49, 49, 49, 0.8),
         #000000
       ); //Pour assombrir une img
       border-radius: 15px;
-      //bottom: 370px;
       height: 100%;
       position: absolute;
       width: 100%;
     }
   }
 }
+
 //Fin code Johan

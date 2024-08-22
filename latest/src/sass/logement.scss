@@ -9,7 +9,6 @@
   top: 20px;
   position: relative;
   img {
-    //max-width: 1240px;
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
@@ -19,12 +18,6 @@
   }
 }
 
-//.layout_housing {
-//max-width: 1440px;
-// margin-left: auto;
-// margin-right: auto;
-//}
-
 //Mise en page globale d'un logement
 .layout_logement {
   margin-left: auto;
@@ -33,8 +26,6 @@
 }
 
 .container_logement {
-  //display: flex;
-  //flex-direction: column;
   width: 70%;
   font-weight: bold;
 }
@@ -58,12 +49,10 @@
   text-align: left;
   font-size: 18px;
   color: white;
-  //max-width: 582px;
   text-wrap: balance;
   max-width: 100%;
   width: 80%;
-  //border-radius: 10px;
-  //height: 50px; //Code test pour btn red d'un logement
+  height: 100%;
 }
 .logement_sheet {
   gap: 76px;
@@ -71,7 +60,6 @@
   position: relative;
   display: flex;
   bottom: 60px;
-  // height: 150px; //Code test pour btn red d'un logement
 }
 
 //Mise en page du titre d'un "logement"
@@ -103,19 +91,13 @@
 //Tags d'un "logement"
 .tags_housing {
   display: flex;
-  //flex-direction: row;
   gap: 10px;
-  //text-align: center;
 }
 .tags_btn {
   color: white;
-  //font-size: 16px;
   background-color: #ff6060;
   border-radius: 12px;
-  //height: 40px;
   position: relative;
-  //width: 115px; //Taille de base des btn Tags
-  //width: 150px;
   border: none;
   right: 40px;
   top: 40px;
@@ -151,7 +133,6 @@
   border-radius: 50%;
   height: 90px;
   width: 90px;
-  //height: 64px;
 }
 
 //Note d'un "logement" + Mise en page des "icon stars"
