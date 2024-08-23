@@ -7,6 +7,7 @@ import logements from "../data/logements.json";
 import Accordion from "../components/Accordion";
 import Slider from "./Slider";
 import StarRating from "./StarRating";
+import Error404 from "./pages/Error404";
 
 const findLogementsID = (id) => {
   return logements.find((logements) => logements.id === id);
@@ -15,6 +16,9 @@ const findLogementsID = (id) => {
 const Logement = () => {
   const { id } = useParams();
   const logements = findLogementsID(id);
+  if (logements === undefined) {
+    return <Error404 />;
+  }
   const picture = logements.host.picture;
   const listTags = logements.tags.map((tag) => (
     <li className="housing_sheet tags_btn" key={tag}>

@@ -14,6 +14,7 @@
   nav {
     ul {
       display: flex;
+      //margin-right: 65px;
       a {
         text-decoration: none;
         color: black;
@@ -30,4 +31,44 @@
     }
   }
 }
+
+//Contient les média querries
+@media (max-width: 888px) {
+  .header {
+    height: 47px;
+    position: relative;
+    right: 40px;
+    nav {
+      ul {
+        //position: relative;
+        //right: 50px;
+        a {
+          text-wrap: nowrap;
+          li {
+            margin-right: 0;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    //padding-left: 50px;
+
+    nav {
+      margin-left: 20px;
+      ul {
+        position: relative;
+        right: 50px;
+        li {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
 //Fin code Johan

@@ -14,4 +14,26 @@
     padding-left: 120px;
   }
 }
+
+//Contient les média querries
+@media (max-width: 888px) {
+  .footer {
+    .footer_logo {
+      width: 122px;
+      height: 40px;
+    }
+    .footer_link {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 888px) {
+  .footer_img {
+    width: 134px;
+    position: relative;
+    bottom: 20px;
+  }
+}
+
 //Fin code Johan

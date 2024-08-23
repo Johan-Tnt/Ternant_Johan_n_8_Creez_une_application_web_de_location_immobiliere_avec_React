@@ -14,7 +14,11 @@ const Footer = () => {
           className="footer_logo"
         />
       </a>
-      <img src={LogoKasa2020} alt="2020 Kasa. All rifghts reserved" />
+      <img
+        src={LogoKasa2020}
+        alt="2020 Kasa. All rifghts reserved"
+        className="footer_img"
+      />
     </div>
   );
 };

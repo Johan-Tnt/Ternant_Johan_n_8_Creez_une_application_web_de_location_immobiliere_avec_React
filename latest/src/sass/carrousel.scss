@@ -9,11 +9,13 @@
 .icon_arrow_left {
   position: absolute;
   margin-top: 150px;
+  cursor: pointer;
 }
 .icon_arrow_right {
   position: absolute;
   margin-top: 150px;
   right: 0;
+  cursor: pointer;
 }
 
 //Contient la mise en page du slider
@@ -35,7 +37,6 @@
   flex: 1;
   width: 20%;
   box-shadow: 0 2px 8px black;
-  cursor: pointer;
 }
 
 //Contient la mise en page du chiffrage des img Carrousel
