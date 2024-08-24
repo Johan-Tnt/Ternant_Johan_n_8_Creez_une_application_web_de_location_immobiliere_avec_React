@@ -27,14 +27,15 @@
 //Contient les média querries
 @media (max-width: 888px) {
   .message_error {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 160px;
+    margin-bottom: 160px;
   }
   .error_title {
     font-size: 96px;
   }
   .error_text {
     text-wrap: balance;
+    font-size: 22px;
   }
 }
 
