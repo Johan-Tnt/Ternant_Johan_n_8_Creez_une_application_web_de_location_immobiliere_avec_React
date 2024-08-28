@@ -62,7 +62,7 @@
 }
 
 //Boutons "A propos"
-.about_btn_2 {
+.about_btn {
   background-color: #ff6060;
   border-radius: 5px;
   margin-top: 30px;
@@ -79,15 +79,23 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+}
+
+.about_composition {
+  min-height: 85vh;
+  margin-bottom: -90px;
 }
 
 //Contient les média querries
 @media (max-width: 888px) {
-  .about_btn_2 {
+  .about_btn {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+  }
+  .accordion__title {
+    font-size: 18px;
   }
 }
 

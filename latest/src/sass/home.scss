@@ -28,7 +28,7 @@ body {
     height: 223px;
     margin-top: 20px;
     position: relative;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +37,7 @@ body {
       height: 100%;
       object-fit: cover;
       border-radius: 25px;
-      filter: brightness(60%); //Pour assombrir une img
+      filter: brightness(45%); //Pour assombrir une img
     }
     //Mise en page du titre de la bannière
     h1 {
@@ -47,6 +47,8 @@ body {
       transform: translate(-50%, -50%);
       color: white;
       font-size: 44px;
+      text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000,
+        1px -1px 0 #000;
     }
   }
 }

@@ -3,7 +3,8 @@
 .message_error {
   color: #ff6060;
   text-align: center;
-  margin-bottom: 100px;
+  min-height: 85vh;
+  margin-bottom: -50px;
 }
 
 .error_title {
@@ -28,7 +29,7 @@
 @media (max-width: 888px) {
   .message_error {
     margin-top: 160px;
-    margin-bottom: 160px;
+    margin-bottom: -90px;
   }
   .error_title {
     font-size: 96px;
@@ -36,6 +37,21 @@
   .error_text {
     text-wrap: balance;
     font-size: 22px;
+  }
+}
+
+@media (max-width: 425px) {
+  .message_error {
+    margin-bottom: -150px;
+  }
+  .error_title {
+    margin-top: 100px;
+  }
+  .error_text {
+    margin-top: 100px;
+  }
+  .error_redirection {
+    margin-top: 100px;
   }
 }
 

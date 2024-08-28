@@ -6,7 +6,7 @@
   gap: 20px;
   flex-direction: column;
   //Mise en page des img d'un "logement"
-  top: 20px;
+  top: 10px;
   position: relative;
   img {
     height: 415px;
@@ -23,11 +23,14 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
+  min-height: 85vh;
 }
 
 .container_logement {
   width: 70%;
   font-weight: bold;
+  bottom: 30px;
+  position: relative;
 }
 
 .container_logement_2 {
@@ -36,8 +39,8 @@
   position: relative;
 }
 .container_information_logement {
-  top: 30px;
   position: relative;
+  top: 50px;
 }
 
 //Boutons "logement"
@@ -59,7 +62,7 @@
   max-width: 1440px;
   position: relative;
   display: flex;
-  bottom: 60px;
+  bottom: 40px;
 }
 
 //Mise en page du titre d'un "logement"
@@ -69,13 +72,6 @@
   position: relative;
   top: 45px;
   margin: 0;
-}
-//Mise en page d'une' "location"
-.housing_sheet {
-  color: black;
-  font-size: 18px;
-  gap: 10px;
-  display: flex;
 }
 .housing_location {
   position: relative;
@@ -111,24 +107,26 @@
 }
 
 //Nom du propriétaire
+.owner_composition {
+  position: relative;
+}
 .owner_name {
   color: #ff6060;
   font-size: 20px;
-  position: relative;
-  bottom: 190px;
+  position: absolute;
   text-align: right;
   text-wrap: balance;
-  right: 100px;
   margin: 0;
+  width: 0px;
+  bottom: 170px;
+  right: 180px;
 }
-
 .owner_accommodation {
   text-align: right;
   position: relative;
-  bottom: 130px;
+  bottom: 150px;
   margin: 0;
 }
-
 .img_owner {
   border-radius: 50%;
   height: 90px;
@@ -142,13 +140,10 @@
   bottom: 130px;
   display: flex;
 }
-
 .star {
   font-size: 1.5rem;
-  //color: #e4e5e9; /* Couleur de l'étoile vide */
 }
-
-.star-rating {
+.star_rating {
   display: flex;
   gap: 10px;
 }
@@ -158,6 +153,65 @@
 @media (max-width: 1440px) {
   .layout_logement {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layout_logement {
+    bottom: 20px;
+    position: relative;
+  }
+  .pictures {
+    top: 20px;
+  }
+  .container_logement {
+    bottom: 0;
+  }
+  .container_logement_2 {
+    margin-top: 100px;
+    top: 90px;
+  }
+  .container_information_logement {
+    top: 0;
+    bottom: 20px;
+  }
+  .title_housing {
+    font-size: 25px;
+  }
+  .housing_location {
+    font-size: 13px;
+  }
+  .logement_sheet {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .logement_btn {
+    width: auto;
+  }
+  .tags_housing {
+    flex-wrap: wrap;
+  }
+  .tags_btn {
+    font-size: 12px;
+  }
+  .img_owner {
+    height: 70px;
+    width: 70px;
+  }
+  .owner_accommodation {
+    bottom: 130px;
+  }
+  .owner_name {
+    font-size: 13px;
+    right: 135px;
+    bottom: 150px;
+  }
+  .rate_housing {
+    justify-content: left;
+    bottom: 170px;
+  }
+  .star {
+    font-size: 1rem;
   }
 }
 

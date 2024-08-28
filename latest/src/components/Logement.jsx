@@ -42,7 +42,7 @@ const Logement = () => {
       <section className="container_information_logement">
         <div className="container_logement">
           <p className="title_housing">{logements.title}</p>
-          <p className="housing_sheet housing_location">{logements.location}</p>
+          <p className="housing_location">{logements.location}</p>
           <ul className="tags_housing">{listTags}</ul>
         </div>
 
@@ -55,7 +55,9 @@ const Logement = () => {
               className="img_owner"
             />
           </p>
-          <p className="owner_name">{logements.host.name}</p>
+          <div className="owner_composition">
+            <p className="owner_name">{logements.host.name}</p>
+          </div>
 
           <div className="rate_housing">
             <StarRating rating={parseInt(logements.rating)} />

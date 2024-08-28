@@ -56,10 +56,49 @@
 }
 
 //Contient les média querries
+@media screen and (max-width: 1024px) {
+  .icon_arrow_left {
+    margin-top: auto;
+    bottom: 150px;
+    top: 150px;
+  }
+  .icon_arrow_right {
+    margin-top: auto;
+    bottom: 150px;
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon_arrow_carrousel {
+    width: 7%;
+  }
+  .icon_arrow_left {
+    left: 5px;
+  }
+  .icon_arrow_right {
+    right: 5px;
+  }
+  .number_sheet {
+    position: relative;
+    bottom: 400px;
+  }
+}
 
 @media screen and (max-width: 550px) {
   .slide_show {
-    height: 200px;
+    height: 255px;
+  }
+  .icon_arrow_left {
+    margin-top: auto;
+    bottom: 180px;
+    top: 180px;
+    left: 5px;
+  }
+  .icon_arrow_right {
+    margin-top: auto;
+    bottom: 180px;
+    top: 180px;
   }
 }
 

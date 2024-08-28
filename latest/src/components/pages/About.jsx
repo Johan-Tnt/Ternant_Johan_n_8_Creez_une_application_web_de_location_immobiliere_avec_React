@@ -6,14 +6,14 @@ import Accordion from "../Accordion";
 
 const About = () => {
   return (
-    <section>
+    <section className="about_composition">
       <div className="home">
         <div className="banner">
           <img src="../src/assets/img/ImgAbout.png" alt="Img About" />
         </div>
 
         <div className="about_sheet">
-          <div className="about_btn_2">
+          <div className="about_btn">
             <Accordion
               title="Fiabilité"
               content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
@@ -22,7 +22,7 @@ const About = () => {
             />
           </div>
 
-          <div className="about_btn_2">
+          <div className="about_btn">
             <Accordion
               title="Respect"
               content="Contenu La bienviellance fait partie des valeurs fondatrices de Kasa. Tout
@@ -31,7 +31,7 @@ const About = () => {
             />
           </div>
 
-          <div className="about_btn_2">
+          <div className="about_btn">
             <Accordion
               title="Service"
               content=" La bienviellance fait partie des valeurs fondatrices de Kasa. Tout
@@ -40,7 +40,7 @@ const About = () => {
             />
           </div>
 
-          <div className="about_btn_2">
+          <div className="about_btn">
             <Accordion
               title="Sécurité"
               content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
