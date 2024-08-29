@@ -16,23 +16,20 @@
 }
 
 //Contient les média querries
-@media (max-width: 888px) {
+@media (max-width: 768px) {
   .footer {
     .footer_logo {
       width: 122px;
       height: 40px;
     }
     .footer_link {
-      padding-left: 0;
+      padding-left: 35px;
     }
-  }
-}
-
-@media (max-width: 888px) {
-  .footer_img {
-    width: 134px;
-    position: relative;
-    bottom: 20px;
+    .footer_img {
+      width: 194px;
+      position: relative;
+      bottom: 20px;
+    }
   }
 }
 

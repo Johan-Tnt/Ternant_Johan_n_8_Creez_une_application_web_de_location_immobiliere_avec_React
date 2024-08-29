@@ -53,9 +53,8 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .header {
-    right: 50px;
     nav {
       ul {
         position: relative;
@@ -71,8 +70,15 @@
   }
 }
 
+@media (max-width: 375px) {
+  .header {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 320px) {
   .header {
+    justify-content: center;
     nav {
       ul {
         right: 20px;

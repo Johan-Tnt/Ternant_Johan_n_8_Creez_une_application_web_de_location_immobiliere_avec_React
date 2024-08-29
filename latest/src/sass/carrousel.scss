@@ -73,32 +73,22 @@
   .icon_arrow_carrousel {
     width: 7%;
   }
-  .icon_arrow_left {
-    left: 5px;
-  }
-  .icon_arrow_right {
-    right: 5px;
-  }
-  .number_sheet {
-    position: relative;
-    bottom: 400px;
-  }
-}
-
-@media screen and (max-width: 550px) {
   .slide_show {
     height: 255px;
   }
   .icon_arrow_left {
-    margin-top: auto;
-    bottom: 180px;
-    top: 180px;
     left: 5px;
+    margin-top: auto;
+    top: 190px;
   }
   .icon_arrow_right {
+    right: 5px;
     margin-top: auto;
-    bottom: 180px;
-    top: 180px;
+    top: 190px;
+  }
+  .number_sheet {
+    position: relative;
+    bottom: 400px;
   }
 }
 

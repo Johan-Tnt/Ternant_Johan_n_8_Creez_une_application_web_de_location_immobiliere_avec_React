@@ -19,9 +19,9 @@
   }
   //Mise en page du titre de chaque "img des logements"
   h3 {
-    position: relative;
-    left: 10px;
-    top: 250px;
+    position: absolute;
+    bottom: 10px;
+    padding-left: 10px;
     font-weight: normal;
     text-wrap: balance;
   }
@@ -53,13 +53,14 @@
 }
 
 //Contient les média querries
-@media (max-width: 888px) {
+@media (max-width: 1024px) {
   .thumb {
     height: 255px;
     max-width: 888px;
     width: 85vw;
     h3 {
-      top: 170px;
+      text-wrap: balance;
+      bottom: 10px;
     }
     img {
       height: 255px;
