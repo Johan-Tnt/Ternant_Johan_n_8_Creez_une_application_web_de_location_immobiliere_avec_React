@@ -54,7 +54,7 @@ body {
 }
 
 //Contient les média querries
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .home {
     .gallery {
       flex-direction: column;
@@ -66,10 +66,18 @@ body {
       background: none;
       margin: 0;
     }
+    .banner {
+      height: 111px;
+      border-radius: 15px;
+      margin-top: 0;
+      img {
+        border-radius: 15px;
+      }
+    }
     .banner h1 {
-      font-size: 34px;
       text-wrap: balance;
       text-align: center;
+      font-size: 24px;
     }
   }
 }
